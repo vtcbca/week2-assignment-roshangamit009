@@ -57,7 +57,7 @@ Update records who are from "Surat" branch with increment in salary 10%.
 import sqlite3 as sq
 con=sq.connect("emp.db")
 cur=con.cursor()
-q="update employee set basic=basic+(basic*10/100) where branch='surat'"
+q="update employee set salary=salary+(salary*10/100) where branch='surat'"
 cur.execute(q)
 con.commit()
 con.close()
